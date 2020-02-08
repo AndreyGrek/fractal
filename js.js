@@ -68,5 +68,3 @@ function wrap(){
 }
 
 setInterval(wrap, 1);
-
-console.log("hello")
