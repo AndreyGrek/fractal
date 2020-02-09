@@ -31,6 +31,41 @@ circle(aX, aY);
 circle(bX, bY);
 circle(cX, cY);
 
+//work place
+
+
+function createCircleManager(){
+  const circle = []
+
+  return {
+    printX: function(){
+      return circle
+    },
+    printY: function(){
+      return circle
+    },
+    add: function(x, y){
+      circle.push({x: x, y: y})
+    }
+  }
+}
+
+const manager = createCircleManager()
+
+document.querySelector(".submit").addEventListener("click", function(e){
+  manager.add(document.querySelector(".form__div form input[name=x]").value, document.querySelector(".form__div form input[name=y]").value)
+
+  e.preventDefault()
+
+  return circle(document.querySelector(".form__div form input[name=x]").value, document.querySelector(".form__div form input[name=y]").value);
+})
+
+
+
+//work place
+
+
+
 function dot(x, y){
   ctx.fillRect(x, y, 1, 1);
 }
@@ -68,3 +103,4 @@ function wrap(){
 }
 
 setInterval(wrap, 1);
+
