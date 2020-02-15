@@ -13,8 +13,11 @@ body{
   left: 0;
   top: 0;
 }
-.form__div{
+#menu{
   position: absolute;
   right: 0;
   top: 0;
+}
+.off{
+  display: none;
 }
